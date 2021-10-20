@@ -1,6 +1,6 @@
 import traceback
 
-from scrape_do import *
+from __init__ import *
 
 # create an web scrapper object
 sample = python_sample()

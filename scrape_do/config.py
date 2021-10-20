@@ -1,4 +1,4 @@
-API_TOKEN = 'Your_API_TOKEN_FOR_scrape.do'
+API_TOKEN = 'Your_API_TOKEN_FOR_scrape'
 URL = 'https://docs.scrape.do/'
 METHOD = 'GET'
 PAYLOAD = {}
