@@ -22,8 +22,8 @@ except Scrape_do_Exception as e:
     print(traceback.format_exc())
 
 try:
-    resp = sample.create_request_url(url='https://docs.scrape.do/', method="GET", payload={}, headers={},
-                                     render=False, super_proxies=False, geo_code=None)
+    resp = sample.create_request_url(url=URL, method=METHOD, payload=PAYLOAD, headers=HEADERS,
+                                         render=RENDER, super_proxies=SUPER_PROXIES, geo_code=GEO_CODE)
     print(resp)
 except ConnectionError as e:
     print(str(e))
