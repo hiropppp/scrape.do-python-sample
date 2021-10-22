@@ -109,7 +109,8 @@ class python_sample:
 
             if response.status_code == 200:
                 response.encoding = 'UTF-8'
-                return response.text
+                return response
+                #return response.text
                 #return response.text.encode('utf8')
 
             elif response.status_code == 404:
@@ -154,7 +155,7 @@ if __name__ == '__main__':
     try:
         resp = sample.create_request_url(url=URL, method=METHOD, payload=PAYLOAD, headers=HEADERS,
                                          render=RENDER, super_proxies=SUPER_PROXIES, geo_code=GEO_CODE)
-        print(resp)
+        print(resp.text)
 
     except ConnectionError as e:
         print(str(e))
