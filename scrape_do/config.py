@@ -1,5 +1,5 @@
 API_TOKEN = 'Your_API_TOKEN_FOR_scrape'
-URL = 'https://docs.scrape.do/'
+URL = 'https://quotes.toscrape.com/'
 METHOD = 'GET'
 PAYLOAD = {}
 HEADERS = {}
