@@ -29,7 +29,7 @@ try:
     print('-----リンク-----')
     print(links)
     
-    # class が quote の div 要素を全て取得する
+    # class が copyrightのtextを取得する
     copyright = soup.find('p', {'class': 'copyright'}).get_text(strip=True)
     print('-----コピーライト-----')
     print(copyright)
